@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "997786BE00926BC17171148B678FBE40370E3C4A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "997786BE00926BC17171148B678FBE40370E3C4A" : 0,
+    "03143704214FDB3FEF9B48801EB17B01AAA68FBA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3F7663CD-31D4-4D76-9E5A-0A076B278525",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "997786BE00926BC17171148B678FBE40370E3C4A" : "BMITime\/",
+    "03143704214FDB3FEF9B48801EB17B01AAA68FBA" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BMITime",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BMITime.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LexDeBash\/The-big-nerd-ranch-2012.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03143704214FDB3FEF9B48801EB17B01AAA68FBA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/LexDeBash\/BMITime.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "997786BE00926BC17171148B678FBE40370E3C4A"
+    }
+  ]
+}
