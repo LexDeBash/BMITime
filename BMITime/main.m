@@ -25,9 +25,11 @@ int main(int argc, const char * argv[]) {
             [person setHeightInMeters:1.8 - i/10.0];
             [person setEmployeeID:i];
             
-            // Включение экземпляра в массив empoyees
+            // Включение работника в массив empoyees
             [employees addObject:person];
         }
+        
+        NSMutableArray *allAssets = [[NSMutableArray alloc] init];
         
         // Создание 10 экземпляров Asset
         for (int i = 0; i<10; i++) {
@@ -48,34 +50,24 @@ int main(int argc, const char * argv[]) {
             
             // Назначение ресурса работнику
             [randomEmployee addAssetObject:asset];
+            
+            [allAssets addObject:asset];
         }
         
         NSLog(@"Employees: %@", employees);
+        
         NSLog(@"Givin up ownership of one employee");
+        
         [employees removeObjectAtIndex:5];
+        
+        NSLog(@"allAssets %@", allAssets);
+        
         NSLog(@"Giving up ownership of array");
+        
+        allAssets = nil;
         employees = nil;
         
-        
-        /* Старая версия файла maim.m
-         
-        // Создание экземпляра Person
-        Employee *person = [[Employee alloc] init];
-        
-        // Присваивание значений переменным экземпляра
-        [person setHeightInMeters:1.68];
-        [person setWeightInKilos:70];
-        [person setEmployeeID:15];
-        
-        // Вызов метода bodyMassIndex
-        float bmi = [person bodyMassIndex];
-        NSLog(@"Данные по сотруднику с табельным номером %d:", [person employeeID]);
-        NSLog(@"Рост: %.2f", [person heightInMeters]);
-        NSLog(@"Вес: %d", [person weightInKilos]);
-        NSLog(@"Индекс массы тела: %.2f", bmi);
-         */
-        
-        
     }
+    sleep(100);
     return 0;
 }
