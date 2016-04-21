@@ -11,12 +11,12 @@
 
 @interface Asset : Employee {
     NSString *label;
-    Employee *holder;
+    __weak Employee *holder;
     unsigned int resaleValue;
 }
 
 @property (strong) NSString *label;
-@property (strong) Employee *holder;
+@property (weak) Employee *holder;
 @property unsigned int resaleValue;
 
 @end
