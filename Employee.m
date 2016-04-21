@@ -17,7 +17,7 @@
     // Значение assets равно nil?
     if (!assets) {
         // Создание массива
-        assets = [[NSMutableArray alloc] init];
+        assets = [[NSMutableSet alloc] init];
     }
     [assets addObject:a];
     [a setHolder:self];
