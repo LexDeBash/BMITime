@@ -29,6 +29,8 @@ int main(int argc, const char * argv[]) {
             [employees addObject:person];
         }
         
+        //Создание массива для хранения всех ресурсов
+        
         NSMutableArray *allAssets = [[NSMutableArray alloc] init];
         
         // Создание 10 экземпляров Asset
