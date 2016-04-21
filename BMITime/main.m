@@ -15,6 +15,9 @@ int main(int argc, const char * argv[]) {
         // Создание массива объектов Employee
         NSMutableArray *employees = [[NSMutableArray alloc] init];
         
+        // Создание словаря executives
+        NSMutableDictionary *executives = [[NSMutableDictionary alloc] init];
+        
         for (int i = 0; i<10; i++) {
             
             // Создание экземпляра Emloyee
@@ -27,6 +30,17 @@ int main(int argc, const char * argv[]) {
             
             // Включение работника в массив empoyees
             [employees addObject:person];
+            
+            //Нужно присвоить первому сотруднику ключ "CEO", а второму - "CTO"
+            // Первый сотрудник?
+            if (i == 0) {
+                [executives setObject:person forKey:@"CEO"];
+            }
+            
+            // Второй сотрудник?
+            if (i == 1) {
+                [executives setObject:person forKey:@"CTO"];
+            }
         }
         
         //Создание массива для хранения всех ресурсов
@@ -67,6 +81,9 @@ int main(int argc, const char * argv[]) {
         [employees removeObjectAtIndex:5];
         
         NSLog(@"allAssets %@", allAssets);
+        
+        NSLog(@"executives: %@", executives);
+        executives = nil;
         
         NSPredicate *predicate = [NSPredicate predicateWithFormat:@"holder.valueOfAsset > 70"];
         NSArray *toBeReclaimed = [allAssets filteredArrayUsingPredicate:predicate];
