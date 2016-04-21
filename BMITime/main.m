@@ -66,12 +66,15 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"allAssets %@", allAssets);
         
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"holder.valueOfAsset > 70"];
+        NSArray *toBeReclaimed = [allAssets filteredArrayUsingPredicate:predicate];
+        NSLog(@"toBeReclaimed: %@", toBeReclaimed);
+        toBeReclaimed = nil;
+        
         NSLog(@"Giving up ownership of array");
         
         allAssets = nil;
         employees = nil;
-        
     }
-    sleep(100);
     return 0;
 }
