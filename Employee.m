@@ -20,6 +20,7 @@
         assets = [[NSMutableArray alloc] init];
     }
     [assets addObject:a];
+    [a setHolder:self];
 }
 
 - (unsigned int)valueOfAsset {
